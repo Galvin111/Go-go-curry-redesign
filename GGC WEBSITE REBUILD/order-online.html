@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Online — Go Go Curry USA Pickup & Delivery Hub</title>
+  <meta name="description" content="Order Japanese Curry online for pickup or delivery from Go Go Curry Times Square (NYC) or Cambridge (MA). Choose Clover Direct Pickup, Uber Eats, DoorDash, or Grubhub.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    ⚡ FAST & EASY ONLINE ORDERING | CHOOSE YOUR LOCATION & PREFERRED PLATFORM BELOW <a href="#select-location">ORDER NOW &rarr;</a>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-badge">55</div>
+        <span>GO GO CURRY</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="times-square.html" class="nav-link">Times Square</a>
+        <a href="cambridge.html" class="nav-link">Cambridge</a>
+        <a href="order-online.html" class="nav-link active">Order Online</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="careers.html" class="nav-link">Careers</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="#select-location" class="btn btn-yellow btn-sm">Select Location</a>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Navigation -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="times-square.html">Times Square (NYC)</a>
+      <a href="cambridge.html">Cambridge (MA)</a>
+      <a href="order-online.html">Order Online</a>
+      <a href="franchising.html">Franchising</a>
+      <a href="about.html">About Us</a>
+      <a href="careers.html">Careers</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <!-- Hero Banner -->
+  <section class="sqs-section bg-yellow text-center" style="padding: 4rem 0 3rem; border-bottom: 5px solid var(--color-red);">
+    <div class="container">
+      <div class="brand-badge red">EXPRESS ORDERING HUB</div>
+      <h1 style="color: var(--color-black);">Order Online for Pickup or Delivery</h1>
+      <p class="lead" style="max-width: 700px; margin: 0 auto; color: #222222; font-weight: 500;">
+        Select your location below to start your order. Choose <strong>Clover Direct Pickup</strong> for fast counter pickup, or order delivery via <strong>Uber Eats</strong>, <strong>DoorDash</strong>, or <strong>Grubhub</strong>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Central Location & Delivery Platform Selector -->
+  <section class="sqs-section bg-white" id="select-location">
+    <div class="container">
+      <div class="grid-2" style="align-items: start;">
+
+        <!-- Location 1: Times Square (NYC) -->
+        <div class="branch-card" id="times-square" style="border-width: 3px;">
+          <div class="branch-card-header">
+            <div>
+              <span class="brand-badge red">STEP 1: SELECT BRANCH</span>
+              <h2 style="font-size: 2.2rem; margin-top: 0.5rem; color: var(--color-red);">Times Square (NYC)</h2>
+            </div>
+            <span class="branch-status">Open Now</span>
+          </div>
+
+          <!-- STOREFRONT PLACEHOLDER -->
+          <div class="placeholder-box ratio-16-9" style="margin-bottom: 1.5rem;">
+            <div class="placeholder-icon">🏙️</div>
+            <div class="placeholder-badge">TIMES SQUARE PHOTO PLACEHOLDER</div>
+            <div class="placeholder-title">Times Square Branch Storefront</div>
+            <div class="placeholder-dimensions">Aspect Ratio 16:9 (800 x 450px)</div>
+          </div>
+
+          <div style="margin-bottom: 1.5rem; font-size: 0.95rem; color: var(--color-gray-600);">
+            <p>📍 <strong>273 W 38th St</strong>, New York, NY 10018</p>
+            <p>📞 (212) 564-5555 | 🕒 Mon–Sun: 10:55 AM – 9:55 PM</p>
+          </div>
+
+          <h4 style="border-top: 2px solid var(--color-yellow); padding-top: 1.25rem; margin-bottom: 1rem; color: var(--color-red);">Select Ordering Platform:</h4>
+          
+          <div class="grid-2" style="gap: 1rem; margin-bottom: 1rem;">
+            <!-- Clover Direct Pickup -->
+            <div class="platform-option-card featured-clover">
+              <div>
+                <span class="badge-direct-pickup" style="margin-bottom: 0.5rem;">⭐ DIRECT STORE PICKUP</span>
+                <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">Clover Online</h3>
+                <p style="font-size: 0.85rem; color: var(--color-gray-600); margin-bottom: 0.75rem;">Fastest direct store pickup</p>
+              </div>
+              <a href="#" onclick="alert('Redirecting to Times Square Clover Direct Online Ordering System...'); return false;" class="btn btn-clover btn-full btn-sm">
+                ☘️ Order via Clover
+              </a>
+            </div>
+
+            <!-- Uber Eats -->
+            <div class="platform-option-card featured-ubereats">
+              <div>
+                <span class="badge-preferred-delivery" style="margin-bottom: 0.5rem;">⭐ PREFERRED DELIVERY</span>
+                <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem; color: #049650;">Uber Eats</h3>
+                <p style="font-size: 0.85rem; color: var(--color-gray-600); margin-bottom: 0.75rem;">Express doorstep delivery</p>
+              </div>
+              <a href="https://www.ubereats.com" target="_blank" rel="noopener" class="btn btn-ubereats btn-full btn-sm">
+                🟢 Order on Uber Eats
+              </a>
+            </div>
+          </div>
+
+          <!-- DoorDash & Grubhub -->
+          <div class="grid-2" style="gap: 1rem;">
+            <div class="platform-option-card">
+              <div>
+                <span class="tag" style="margin-bottom: 0.5rem; display: inline-block;">DELIVERY OPTION</span>
+                <h3 style="font-size: 1.2rem; margin-bottom: 0.25rem;">DoorDash</h3>
+                <p style="font-size: 0.85rem; color: var(--color-gray-600); margin-bottom: 0.75rem;">Local courier delivery</p>
+              </div>
+              <a href="https://www.doordash.com" target="_blank" rel="noopener" class="btn btn-doordash btn-full btn-sm">
+                🔴 DoorDash
+              </a>
+            </div>
+
+            <div class="platform-option-card">
+              <div>
+                <span class="tag" style="margin-bottom: 0.5rem; display: inline-block;">DELIVERY OPTION</span>
+                <h3 style="font-size: 1.2rem; margin-bottom: 0.25rem;">Grubhub</h3>
+                <p style="font-size: 0.85rem; color: var(--color-gray-600); margin-bottom: 0.75rem;">Local courier delivery</p>
+              </div>
+              <a href="https://www.grubhub.com" target="_blank" rel="noopener" class="btn btn-grubhub btn-full btn-sm">
+                🟠 Grubhub
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Location 2: Cambridge (MA) -->
+        <div class="branch-card" id="cambridge" style="border-width: 3px;">
+          <div class="branch-card-header">
+            <div>
+              <span class="brand-badge red">STEP 1: SELECT BRANCH</span>
+              <h2 style="font-size: 2.2rem; margin-top: 0.5rem; color: var(--color-red);">Cambridge (MA)</h2>
+            </div>
+            <span class="branch-status">Open Now</span>
+          </div>
+
+          <!-- STOREFRONT PLACEHOLDER -->
+          <div class="placeholder-box ratio-16-9" style="margin-bottom: 1.5rem;">
+            <div class="placeholder-icon">🏛️</div>
+            <div class="placeholder-badge">CAMBRIDGE PHOTO PLACEHOLDER</div>
+            <div class="placeholder-title">Cambridge Branch Storefront</div>
+            <div class="placeholder-dimensions">Aspect Ratio 16:9 (800 x 450px)</div>
+          </div>
+
+          <div style="margin-bottom: 1.5rem; font-size: 0.95rem; color: var(--color-gray-600);">
+            <p>📍 <strong>1304 Massachusetts Ave</strong>, Cambridge, MA 02138</p>
+            <p>📞 (617) 945-5555 | 🕒 Mon–Sun: 10:55 AM – 9:55 PM</p>
+          </div>
+
+          <h4 style="border-top: 2px solid var(--color-yellow); padding-top: 1.25rem; margin-bottom: 1rem; color: var(--color-red);">Select Ordering Platform:</h4>
+          
+          <div class="grid-2" style="gap: 1rem; margin-bottom: 1rem;">
+            <!-- Clover Direct Pickup -->
+            <div class="platform-option-card featured-clover">
+              <div>
+                <span class="badge-direct-pickup" style="margin-bottom: 0.5rem;">⭐ DIRECT STORE PICKUP</span>
+                <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">Clover Online</h3>
+                <p style="font-size: 0.85rem; color: var(--color-gray-600); margin-bottom: 0.75rem;">Fastest direct store pickup</p>
+              </div>
+              <a href="#" onclick="alert('Redirecting to Cambridge Clover Direct Online Ordering System...'); return false;" class="btn btn-clover btn-full btn-sm">
+                ☘️ Order via Clover
+              </a>
+            </div>
+
+            <!-- Uber Eats -->
+            <div class="platform-option-card featured-ubereats">
+              <div>
+                <span class="badge-preferred-delivery" style="margin-bottom: 0.5rem;">⭐ PREFERRED DELIVERY</span>
+                <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem; color: #049650;">Uber Eats</h3>
+                <p style="font-size: 0.85rem; color: var(--color-gray-600); margin-bottom: 0.75rem;">Express doorstep delivery</p>
+              </div>
+              <a href="https://www.ubereats.com" target="_blank" rel="noopener" class="btn btn-ubereats btn-full btn-sm">
+                🟢 Order on Uber Eats
+              </a>
+            </div>
+          </div>
+
+          <!-- DoorDash & Grubhub -->
+          <div class="grid-2" style="gap: 1rem;">
+            <div class="platform-option-card">
+              <div>
+                <span class="tag" style="margin-bottom: 0.5rem; display: inline-block;">DELIVERY OPTION</span>
+                <h3 style="font-size: 1.2rem; margin-bottom: 0.25rem;">DoorDash</h3>
+                <p style="font-size: 0.85rem; color: var(--color-gray-600); margin-bottom: 0.75rem;">Local courier delivery</p>
+              </div>
+              <a href="https://www.doordash.com" target="_blank" rel="noopener" class="btn btn-doordash btn-full btn-sm">
+                🔴 DoorDash
+              </a>
+            </div>
+
+            <div class="platform-option-card">
+              <div>
+                <span class="tag" style="margin-bottom: 0.5rem; display: inline-block;">DELIVERY OPTION</span>
+                <h3 style="font-size: 1.2rem; margin-bottom: 0.25rem;">Grubhub</h3>
+                <p style="font-size: 0.85rem; color: var(--color-gray-600); margin-bottom: 0.75rem;">Local courier delivery</p>
+              </div>
+              <a href="https://www.grubhub.com" target="_blank" rel="noopener" class="btn btn-grubhub btn-full btn-sm">
+                🟠 Grubhub
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Ordering Features Section -->
+  <section class="sqs-section bg-yellow-light" style="border-top: 2px solid var(--color-yellow);">
+    <div class="container grid-2">
+      <div>
+        <div class="brand-badge red">HOT & FRESH PREPARATION</div>
+        <h2 style="color: var(--color-red);">Why Order Online With Go Go Curry?</h2>
+        <p style="font-size: 1.05rem; margin-bottom: 1.25rem;">
+          Whether you're picking up lunch in Times Square or getting curry delivered to your dorm in Harvard Square, our online ordering system gets hot katsu to you fast!
+        </p>
+        <ul style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1.5rem;">
+          <li style="display: flex; gap: 0.75rem; font-size: 1rem; font-weight: 600;">
+            <span style="color: var(--color-red);">✔</span> Real-time menu customization for portion sizes (S, M, L, XL) and toppings
+          </li>
+          <li style="display: flex; gap: 0.75rem; font-size: 1rem; font-weight: 600;">
+            <span style="color: var(--color-red);">✔</span> Direct kitchen order routing for fast pickup and delivery dispatch
+          </li>
+          <li style="display: flex; gap: 0.75rem; font-size: 1rem; font-weight: 600;">
+            <span style="color: var(--color-red);">✔</span> Convenient options for direct pickup or doorstep delivery
+          </li>
+        </ul>
+      </div>
+
+      <div style="background: var(--color-white); border: 3px solid var(--color-red); padding: 2.5rem; border-radius: var(--radius-md); text-align: center;">
+        <div style="font-size: 3rem; margin-bottom: 0.5rem;">🍛</div>
+        <h3 style="color: var(--color-red); font-size: 1.8rem; margin-bottom: 0.75rem;">Hungry Right Now?</h3>
+        <p style="color: var(--color-gray-600); margin-bottom: 1.5rem;">
+          Select your nearest branch to place an order:
+        </p>
+        <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+          <a href="#times-square" class="btn btn-primary-red">
+            Order Times Square (NYC) &rarr;
+          </a>
+          <a href="#cambridge" class="btn btn-yellow">
+            Order Cambridge (MA) &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accordion FAQ Section -->
+  <section class="sqs-section bg-white">
+    <div class="container container-narrow">
+      <div class="text-center" style="margin-bottom: 2.5rem;">
+        <div class="brand-badge red">ORDERING FAQS</div>
+        <h2 style="color: var(--color-red);">Frequently Asked Ordering Questions</h2>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>How do I place a direct store pickup order?</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>Select your branch location above and click <strong>Order via Clover</strong>. Your order goes directly to our store counter for fast preparation and quick pickup.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>Which delivery services are available?</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>You can order delivery using <strong>Uber Eats</strong>, <strong>DoorDash</strong>, or <strong>Grubhub</strong>. Simply choose your preferred platform under your branch location above.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>Can I customize curry spice levels and toppings online?</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>Yes! All our online ordering channels allow full customization. You can choose your portion size (Small, Medium, Large, XL), add extra toppings (cheese, egg, sausages), and specify extra sauce or cabbage.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>Do you offer catering orders for large office lunches?</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>Absolutely. We cater office meetings, events, and parties across NYC and Greater Boston. Please visit our <a href="contact.html" style="color: var(--color-red); font-weight: bold;">Contact page</a> to submit a catering request form.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" style="color: var(--color-white);">
+            <div class="logo-badge">55</div>
+            <span style="color: var(--color-yellow);">GO GO CURRY</span>
+          </a>
+          <p>America's premier Kanazawa-style Japanese Curry house. Fast, energetic, and simmered for 55 hours of total perfection.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Times Square (NYC)</h4>
+          <p style="font-size: 0.9rem; color: var(--color-white);">📍 273 W 38th St, New York, NY 10018<br>📞 (212) 564-5555</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Cambridge (MA)</h4>
+          <p style="font-size: 0.9rem; color: var(--color-white);">📍 1304 Massachusetts Ave, Cambridge, MA 02138<br>📞 (617) 945-5555</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <div class="footer-links">
+            <a href="menu.html">Full Menu</a>
+            <a href="order-online.html">Order Online</a>
+            <a href="franchising.html">Franchising</a>
+            <a href="about.html">About Go Go Curry</a>
+            <a href="careers.html">Join Our Team</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Go Go Curry USA. All rights reserved.</div>
+        <div class="social-links">
+          <a href="#" class="social-icon">IG</a>
+          <a href="#" class="social-icon">FB</a>
+          <a href="#" class="social-icon">TK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
